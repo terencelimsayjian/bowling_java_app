@@ -1,35 +1,42 @@
 import java.util.ArrayList;
 
 public class Frame {
-    public static final int INCOMPLETE = 0;
-    public static final int OPEN_FRAME = 1;
-    public static final int SPARE = 2;
-    public static final int STRIKE = 3;
-
-    private int pinFall;
-    private ArrayList<Roll> rolls = new ArrayList<Roll>();
-    private int status = Frame.INCOMPLETE;
+    protected int pinFall;
+    protected ArrayList<Roll> rolls = new ArrayList<Roll>();
+    protected boolean frameComplete = false;
 
     public void roll(Roll roll) {
-        if (status == Frame.INCOMPLETE) {
+        if (!frameComplete) {
             rolls.add(roll);
             addRollToPinFall(roll);
-            setStatus();
+            setFrameCompleteStatus();
         }
     }
 
-    private void addRollToPinFall(Roll roll) {
+    protected void addRollToPinFall(Roll roll) {
         pinFall += roll.getPinFall();
     }
 
-    private void setStatus() {
-        if (rolls.size() == 2 && pinFall <= 9) {
-            status = Frame.OPEN_FRAME;
-        } else if (rolls.size() == 2 && pinFall == 10) {
-            status = Frame.SPARE;
-        } else if (rolls.size() == 1 && pinFall == 10) {
-            status = Frame.STRIKE;
+    protected void setFrameCompleteStatus() {
+        if (isOpenFrame()) {
+            frameComplete = true;
+        } else if (isSpare()) {
+            frameComplete = true;
+        } else if (isStrike()) {
+            frameComplete = true;
         }
+    }
+
+    public boolean isOpenFrame() {
+        return rolls.size() == 2 && pinFall <= 9;
+    }
+
+    public boolean isStrike() {
+        return rolls.size() == 1 && pinFall == 10;
+    }
+
+    public boolean isSpare() {
+        return rolls.size() == 2 && pinFall == 10;
     }
 
     public int getPinFall() {
@@ -40,11 +47,8 @@ public class Frame {
         return rolls;
     }
 
-    public int getStatus() {
-        return status;
+    public String toString() {
+        return rolls.size() + " rolls made. Frame complete: " + frameComplete;
     }
-
-    // lastFrame extends Frame
-    // has three rolls if last Frame
 
 }
