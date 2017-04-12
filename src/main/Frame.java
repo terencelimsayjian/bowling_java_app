@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 
 public class Frame {
+    protected static final String STRIKE_STRING = "[X]";
+    protected static final String SPARE_STRING = "[/]";
+    protected static final String OPEN_FRAME = "[";
+    protected static final String CLOSE_FRAME = "]";
+    protected static final String EMPTY_ROLL = OPEN_FRAME + " " + CLOSE_FRAME;
+
     protected int pinFall;
     protected ArrayList<Roll> rolls = new ArrayList<Roll>();
     protected boolean frameComplete = false;
@@ -49,16 +55,16 @@ public class Frame {
 
     public String toString() {
         if (isStrike()) {
-            return "[[X][ ]]";
+            return OPEN_FRAME + STRIKE_STRING + EMPTY_ROLL + CLOSE_FRAME;
         } else if (isSpare()) {
-            return "[[" + getRoll(0) +  "][/]]";
+            return OPEN_FRAME + getStringForOpenRolls(0) + SPARE_STRING + CLOSE_FRAME;
         } else {
-            return "[[" + getRoll(0) +  "][" + getRoll(1) + "]]";
+            return OPEN_FRAME + getStringForOpenRolls(0) + getStringForOpenRolls(1) + CLOSE_FRAME;
         }
     }
 
-    private int getRoll(int i) {
-        return rolls.get(i).getPinFall();
+    protected String getStringForOpenRolls(int i) {
+        return OPEN_FRAME + rolls.get(i).getPinFall() + CLOSE_FRAME;
     }
 
 }

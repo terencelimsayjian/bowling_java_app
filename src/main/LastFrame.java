@@ -10,35 +10,62 @@ public class LastFrame extends Frame {
     }
 
     public String toString() {
-        int firstRoll = getRoll(0);
-        int secondRoll = getRoll(1);
-        String roll1String = "[" + firstRoll + "]";
-        String roll2String = "[" + secondRoll + "]";
-        String roll3String = "[ ]";
+        String roll1String = firstRollToString();
+        String roll2String = secondRollToString();
+        String roll3String = thirdRollToString();
 
-        if (firstRoll == 10) {
-            roll1String = "[X]";
-        }
+        return OPEN_FRAME + roll1String + roll2String + roll3String + CLOSE_FRAME;
+    }
 
-        if (firstRoll + secondRoll == 10 && firstRoll < 10) {
-            roll2String = "[/]";
-        } else if (firstRoll == 10 && secondRoll == 10) {
-            roll2String = "[X]";
+    private String firstRollToString() {
+        int firstRollPinFall = getRollPinFall(0);
+        String roll1String = getStringForOpenRolls(0);
+
+        if (firstRollPinFall == 10) {
+            roll1String = STRIKE_STRING;
         }
+        return roll1String;
+    }
+
+    private String secondRollToString() {
+        String roll2String = getStringForOpenRolls(1);
+
+        if (firstTwoRollsIsSpare()) {
+            roll2String = SPARE_STRING;
+        } else if (firstTwoRollsAreStrikes()) {
+            roll2String = STRIKE_STRING;
+        }
+        return roll2String;
+    }
+
+    private boolean firstTwoRollsAreStrikes() {
+        int firstRollPinFall = getRollPinFall(0);
+        int secondRollPinFall = getRollPinFall(1);
+        return firstRollPinFall == 10 && secondRollPinFall == 10;
+    }
+
+    private boolean firstTwoRollsIsSpare() {
+        int firstRollPinFall = getRollPinFall(0);
+        int secondRollPinFall = getRollPinFall(1);
+
+        return firstRollPinFall + secondRollPinFall == 10 && firstRollPinFall < 10;
+    }
+
+    private String thirdRollToString() {
+        String roll3String = EMPTY_ROLL;
 
         if (rolls.size() == 3) {
-            int thirdRoll = getRoll(2);
-            roll3String = "[" + thirdRoll + "]";
-            if (thirdRoll == 10) {
-                roll3String = "[X]";
+            int thirdRollPinFall = getRollPinFall(2);
+            roll3String = getStringForOpenRolls(2);
+            if (thirdRollPinFall == 10) {
+                roll3String = STRIKE_STRING;
             }
 
         }
-
-        return "[" + roll1String + roll2String + roll3String + "]";
+        return roll3String;
     }
 
-    private int getRoll(int i) {
+    private int getRollPinFall(int i) {
         return rolls.get(i).getPinFall();
     }
 

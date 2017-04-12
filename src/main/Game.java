@@ -23,6 +23,10 @@ public class Game {
         }
     }
 
+    public boolean isGamePlaying() {
+        return gamePlaying;
+    }
+
     private void stopGameIfEndOfLastFrame() {
         if (frames.get(9).frameComplete) {
             gamePlaying = false;
