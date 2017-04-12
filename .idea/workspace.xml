@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a099166-0b04-43ad-81eb-41dcff2db6b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/LastFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/GameTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/LastFrameTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bowling_java_app/Frame.class" afterPath="$PROJECT_DIR$/out/production/bowling_java_app/Frame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bowling_java_app/FrameScorer.class" afterPath="$PROJECT_DIR$/out/production/bowling_java_app/FrameScorer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bowling_java_app/Game.class" afterPath="$PROJECT_DIR$/out/production/bowling_java_app/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bowling_java_app/Roll.class" afterPath="$PROJECT_DIR$/out/production/bowling_java_app/Roll.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/bowling_java_app/FrameTest.class" afterPath="$PROJECT_DIR$/out/test/bowling_java_app/FrameTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/bowling_java_app/FrameScorerTest.class" afterPath="$PROJECT_DIR$/out/test/bowling_java_app/FrameScorerTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/bowling_java_app/GameTest.class" afterPath="$PROJECT_DIR$/out/test/bowling_java_app/GameTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Frame.java" afterPath="$PROJECT_DIR$/src/main/Frame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/FrameScorer.java" afterPath="$PROJECT_DIR$/src/main/FrameScorer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Game.java" afterPath="$PROJECT_DIR$/src/main/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Roll.java" afterPath="$PROJECT_DIR$/src/main/Roll.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/LastFrame.java" afterPath="$PROJECT_DIR$/src/main/LastFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/FrameScorerTest.java" afterPath="$PROJECT_DIR$/src/test/FrameScorerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/FrameTest.java" afterPath="$PROJECT_DIR$/src/test/FrameTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/GameTest.java" afterPath="$PROJECT_DIR$/src/test/GameTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,94 +25,69 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+            <state relative-caret-position="475">
+              <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
               <folding>
                 <element signature="method#Game#0;class#Game#0" expanded="false" />
-                <element signature="method#roll#0;class#Game#0" expanded="false" />
                 <element signature="method#stopGameIfEndOfLastFrame#0;class#Game#0" expanded="false" />
                 <element signature="method#incrementCurrentFrameIfCurrentFrameComplete#0;class#Game#0" expanded="false" />
-                <element signature="e#1223#1224#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
+                <element signature="method#score#0;class#Game#0" expanded="false" />
+                <element signature="method#scoreFirstEightFrames#0;class#Game#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/GameTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="38" column="46" lean-forward="false" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-              <folding>
-                <element signature="method#rollOneOpenFrame#0;class#GameTest#0" expanded="false" />
-                <element signature="method#rollTwoOpenFrames#0;class#GameTest#0" expanded="false" />
-                <element signature="method#rollNineOpenFramesAndTestLastFrame#0;class#GameTest#0" expanded="false" />
-                <element signature="method#gameStopsAfterLastFrameIsRolled#0;class#GameTest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Frame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="250">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
-                <element signature="e#128#134#0" expanded="true" />
-                <element signature="method#roll#0;class#Frame#0" expanded="false" />
+                <element signature="method#setFrameCompleteStatus#0;class#Frame#0" expanded="false" />
+                <element signature="method#toString#0;class#Frame#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FrameTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/FrameTest.java">
+      <file leaf-file-name="LastFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/LastFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+            <state relative-caret-position="433">
+              <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding>
-                <element signature="method#testRoll#0;class#FrameTest#0" expanded="false" />
-                <element signature="method#testThreeRolls#0;class#FrameTest#0" expanded="false" />
-                <element signature="method#testOpenFrameStatus#0;class#FrameTest#0" expanded="false" />
-                <element signature="method#testSpareStatus#0;class#FrameTest#0" expanded="false" />
-                <element signature="method#testStrikeStatus#0;class#FrameTest#0" expanded="false" />
+                <element signature="e#1095#1096#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FrameScorer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Roll.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Roll.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <folding>
+                <element signature="e#75#76#0" expanded="true" />
+                <element signature="e#113#114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrameScorer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/FrameScorer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="72" lean-forward="false" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+            <state relative-caret-position="405">
+              <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding>
-                <element signature="e#168#169#0" expanded="true" />
-                <element signature="e#209#210#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrameScorerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/FrameScorerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-              <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-              <folding>
-                <element signature="method#testScoreOpenFrame#0;class#FrameScorerTest#0" expanded="false" />
-                <element signature="method#testSpare#0;class#FrameScorerTest#0" expanded="false" />
-                <element signature="method#testSpareWithStrike#0;class#FrameScorerTest#0" expanded="false" />
-                <element signature="method#testStrikeWithOpenFrame#0;class#FrameScorerTest#0" expanded="false" />
-                <element signature="method#testStrikeWithStrikeAndOpenFrame#0;class#FrameScorerTest#0" expanded="false" />
+                <element signature="method#getFirstTwoRolls#0;class#FrameScorer#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -150,14 +123,14 @@
         <option value="$PROJECT_DIR$/src/test/RollTest.java" />
         <option value="$PROJECT_DIR$/bowling_java_app.iml" />
         <option value="$PROJECT_DIR$/src/test/LastFrameTest.java" />
-        <option value="$PROJECT_DIR$/src/main/LastFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/Roll.java" />
+        <option value="$PROJECT_DIR$/src/test/FrameTest.java" />
         <option value="$PROJECT_DIR$/src/test/FrameScorerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/FrameScorer.java" />
+        <option value="$PROJECT_DIR$/src/main/Roll.java" />
         <option value="$PROJECT_DIR$/src/test/GameTest.java" />
         <option value="$PROJECT_DIR$/src/main/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/LastFrame.java" />
         <option value="$PROJECT_DIR$/src/main/Frame.java" />
-        <option value="$PROJECT_DIR$/src/test/FrameTest.java" />
-        <option value="$PROJECT_DIR$/src/main/FrameScorer.java" />
       </list>
     </option>
   </component>
@@ -181,7 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -234,6 +206,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,27 +244,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.FrameTest">
-    <configuration default="false" name="LastFrameTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="bowling_java_app" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LastFrameTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="FrameScorerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="bowling_java_app" />
@@ -580,20 +532,18 @@
       <listeners />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LastFrameTest (1)" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FrameScorerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in bowling_java_app" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FrameTest" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FrameScorerTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in bowling_java_app" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FrameTest" />
     </list>
     <recent_temporary>
-      <list size="5">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="JUnit.FrameTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in bowling_java_app" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FrameScorerTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LastFrameTest (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FrameScorerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in bowling_java_app" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -611,35 +561,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_bowling_java_app - 2017.04.11 at 17h 24m 00s.xml">
-      <configuration name="All in bowling_java_app" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FrameTest - 2017.04.11 at 17h 27m 00s.xml">
+    <history-entry file="FrameTest - 2017.04.12 at 12h 10m 54s.xml">
       <configuration name="FrameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2017.04.11 at 17h 16m 07s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_(1) - 2017.04.12 at 12h 02m 08s.xml">
+      <configuration name="GameTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2017.04.11 at 17h 16m 22s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_(1) - 2017.04.12 at 12h 02m 15s.xml">
+      <configuration name="GameTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2017.04.11 at 17h 17m 37s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_(1) - 2017.04.12 at 12h 02m 20s.xml">
+      <configuration name="GameTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2017.04.11 at 17h 17m 42s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_(1) - 2017.04.12 at 12h 02m 28s.xml">
+      <configuration name="GameTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2017.04.11 at 17h 18m 31s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_(1) - 2017.04.12 at 12h 02m 44s.xml">
+      <configuration name="GameTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2017.04.11 at 17h 18m 44s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_(1) - 2017.04.12 at 12h 06m 38s.xml">
+      <configuration name="GameTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2017.04.11 at 17h 19m 00s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_(1) - 2017.04.12 at 12h 06m 56s.xml">
+      <configuration name="GameTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest - 2017.04.11 at 17h 19m 45s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
+    <history-entry file="GameTest_(1) - 2017.04.12 at 12h 07m 19s.xml">
+      <configuration name="GameTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_(1) - 2017.04.12 at 12h 10m 37s.xml">
+      <configuration name="GameTest (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -649,7 +599,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -661,7 +611,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -690,105 +640,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/RollTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RollTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/junit/lib/opentest4j-1.0.0-M1.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/junit/lib/junit-jupiter-api-5.0.0-M3.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bowling_java_app.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RollTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/LastFrameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/LastFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="105" column="13" lean-forward="false" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Roll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <element signature="e#75#76#0" expanded="true" />
-            <element signature="e#113#114#0" expanded="true" />
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/FrameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-          <folding>
-            <element signature="method#testRoll#0;class#FrameTest#0" expanded="false" />
-            <element signature="method#testThreeRolls#0;class#FrameTest#0" expanded="false" />
-            <element signature="method#testOpenFrameStatus#0;class#FrameTest#0" expanded="false" />
-            <element signature="method#testSpareStatus#0;class#FrameTest#0" expanded="false" />
-            <element signature="method#testStrikeStatus#0;class#FrameTest#0" expanded="false" />
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#stopGameIfEndOfLastFrame#0;class#Game#0" expanded="false" />
+            <element signature="method#incrementCurrentFrameIfCurrentFrameComplete#0;class#Game#0" expanded="false" />
+            <element signature="method#score#0;class#Game#0" expanded="false" />
+            <element signature="method#scoreFirstEightFrames#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -808,26 +669,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
+        <state relative-caret-position="30">
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding>
-            <element signature="e#128#134#0" expanded="true" />
-            <element signature="method#roll#0;class#Frame#0" expanded="false" />
+            <element signature="method#setFrameCompleteStatus#0;class#Frame#0" expanded="false" />
+            <element signature="method#toString#0;class#Frame#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/test/FrameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        <state relative-caret-position="330">
+          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
           <folding>
-            <element signature="method#Game#0;class#Game#0" expanded="false" />
-            <element signature="method#roll#0;class#Game#0" expanded="false" />
-            <element signature="method#stopGameIfEndOfLastFrame#0;class#Game#0" expanded="false" />
-            <element signature="method#incrementCurrentFrameIfCurrentFrameComplete#0;class#Game#0" expanded="false" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="method#testRoll#0;class#FrameTest#0" expanded="false" />
+            <element signature="method#testThreeRolls#0;class#FrameTest#0" expanded="false" />
+            <element signature="method#testOpenFrameStatus#0;class#FrameTest#0" expanded="false" />
+            <element signature="method#testSpareStatus#0;class#FrameTest#0" expanded="false" />
+            <element signature="method#testStrikeStatus#0;class#FrameTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -839,22 +699,170 @@
           <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
           <folding>
-            <element signature="method#testScoreOpenFrame#0;class#FrameScorerTest#0" expanded="false" />
             <element signature="method#testSpare#0;class#FrameScorerTest#0" expanded="false" />
-            <element signature="method#testSpareWithStrike#0;class#FrameScorerTest#0" expanded="false" />
-            <element signature="method#testStrikeWithOpenFrame#0;class#FrameScorerTest#0" expanded="false" />
-            <element signature="method#testStrikeWithStrikeAndOpenFrame#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testNinthFrameStrike#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testNinthFrameStrikeWithThreeLastFrameStrikes#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testScoreLastOpenFrame#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testScoreLastOpenFrameDifferentValues#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testScoreLastFrameSpareOpen#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testScoreLastFrameStrikeSpare#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testScoreLastFrameTripleStrike#0;class#FrameScorerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/FrameScorer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="120">
           <caret line="10" column="72" lean-forward="false" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
           <folding>
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
+            <element signature="method#getFirstTwoRolls#0;class#FrameScorer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RollTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/RollTest.java" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/junit/lib/opentest4j-1.0.0-M1.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/junit/lib/junit-jupiter-api-5.0.0-M3.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bowling_java_app.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RollTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/LastFrameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="105" column="13" lean-forward="false" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/FrameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <folding>
+            <element signature="method#testRoll#0;class#FrameTest#0" expanded="false" />
+            <element signature="method#testThreeRolls#0;class#FrameTest#0" expanded="false" />
+            <element signature="method#testOpenFrameStatus#0;class#FrameTest#0" expanded="false" />
+            <element signature="method#testSpareStatus#0;class#FrameTest#0" expanded="false" />
+            <element signature="method#testStrikeStatus#0;class#FrameTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/FrameScorerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="94" column="49" lean-forward="false" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
+          <folding>
+            <element signature="method#testSpare#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testNinthFrameStrike#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testNinthFrameStrikeWithThreeLastFrameStrikes#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testScoreLastOpenFrame#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testScoreLastOpenFrameDifferentValues#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testScoreLastFrameSpareOpen#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testScoreLastFrameStrikeSpare#0;class#FrameScorerTest#0" expanded="false" />
+            <element signature="method#testScoreLastFrameTripleStrike#0;class#FrameScorerTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/FrameScorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding>
+            <element signature="method#getFirstTwoRolls#0;class#FrameScorer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Roll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#75#76#0" expanded="true" />
+            <element signature="e#113#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+          <folding>
+            <element signature="method#rollOneOpenFrame#0;class#GameTest#0" expanded="false" />
+            <element signature="method#rollTwoOpenFrames#0;class#GameTest#0" expanded="false" />
+            <element signature="method#rollNineOpenFramesAndTestLastFrame#0;class#GameTest#0" expanded="false" />
+            <element signature="method#gameStopsAfterLastFrameIsRolled#0;class#GameTest#0" expanded="false" />
+            <element signature="method#testSpareFrames#0;class#GameTest#0" expanded="false" />
+            <element signature="method#testPerfectGame#0;class#GameTest#0" expanded="false" />
+            <element signature="method#testMixtureOfSparesAndStrikes#0;class#GameTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#stopGameIfEndOfLastFrame#0;class#Game#0" expanded="false" />
+            <element signature="method#incrementCurrentFrameIfCurrentFrameComplete#0;class#Game#0" expanded="false" />
+            <element signature="method#score#0;class#Game#0" expanded="false" />
+            <element signature="method#scoreFirstEightFrames#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/LastFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="method#setFrameCompleteStatus#0;class#Frame#0" expanded="false" />
+            <element signature="method#toString#0;class#Frame#0" expanded="false" />
           </folding>
         </state>
       </provider>

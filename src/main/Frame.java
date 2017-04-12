@@ -13,7 +13,7 @@ public class Frame {
         }
     }
 
-    protected void addRollToPinFall(Roll roll) {
+    private void addRollToPinFall(Roll roll) {
         pinFall += roll.getPinFall();
     }
 
@@ -31,11 +31,11 @@ public class Frame {
         return rolls.size() == 2 && pinFall <= 9;
     }
 
-    public boolean isStrike() {
+    public final boolean isStrike() {
         return rolls.size() == 1 && pinFall == 10;
     }
 
-    public boolean isSpare() {
+    public final boolean isSpare() {
         return rolls.size() == 2 && pinFall == 10;
     }
 
@@ -48,7 +48,17 @@ public class Frame {
     }
 
     public String toString() {
-        return rolls.size() + " rolls made. Frame complete: " + frameComplete;
+        if (isStrike()) {
+            return "[[X][ ]]";
+        } else if (isSpare()) {
+            return "[[" + getRoll(0) +  "][/]]";
+        } else {
+            return "[[" + getRoll(0) +  "][" + getRoll(1) + "]]";
+        }
+    }
+
+    private int getRoll(int i) {
+        return rolls.get(i).getPinFall();
     }
 
 }

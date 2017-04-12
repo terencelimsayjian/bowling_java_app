@@ -1,26 +1,36 @@
 public abstract class FrameScorer {
 
-    // how to implement the last frame
-
-    // if frame is either strike or spare, cannot
-    public static int score(Frame frame) {
-        return frame.getPinFall();
-    }
-
-    // if both frames are strikes, cannot
-    // if currentFrame is strike, this algo is sufficient for 9th frame;
-    public static int scoreClosedFrame(Frame currentFrame, Frame nextFrame) {
-        if (currentFrame.isSpare()) {
-            return currentFrame.getPinFall() + nextFrame.getRolls().get(0).getPinFall();
-        } else if (currentFrame.isStrike()) {
-            return currentFrame.getPinFall() + nextFrame.getPinFall();
+    public static int scoreFrame(Frame currentFrame, Frame nextFrame, Frame followingFrame) {
+        if (currentFrame.isOpenFrame()) {
+            return currentFrame.getPinFall();
+        } else if (currentFrame.isSpare()) {
+            return currentFrame.getPinFall() + getFirstRoll(nextFrame);
+        } else if (currentFrame.isStrike() && !nextFrame.isStrike()) {
+            return currentFrame.getPinFall() + getFirstTwoRolls(nextFrame);
+        } else {
+            return currentFrame.getPinFall() + nextFrame.getPinFall() + getFirstRoll(followingFrame);
         }
-        return currentFrame.getPinFall();
     }
 
-    public static int scoreTwoConsecutiveStrikes(Frame currentFrame, Frame nextFrame, Frame followingFrame) {
-        return currentFrame.getPinFall() + nextFrame.getPinFall() + followingFrame.getRolls().get(0).getPinFall();
+    public static int scoreNinthFrame(Frame ninthFrame, LastFrame lastFrame) {
+        if (ninthFrame.isSpare()) {
+            return ninthFrame.getPinFall() + getFirstRoll(lastFrame);
+        } else if (ninthFrame.isStrike()) {
+            return ninthFrame.getPinFall() + getFirstTwoRolls(lastFrame);
+        }
+        return ninthFrame.getPinFall();
     }
 
+    private static int getFirstRoll(Frame frame) {
+        return frame.getRolls().get(0).getPinFall();
+    }
+
+    private static int getFirstTwoRolls(Frame frame) {
+        return getFirstRoll(frame) + frame.getRolls().get(1).getPinFall();
+    }
+
+    public static int scoreLastFrame(LastFrame lastFrame) {
+        return lastFrame.getPinFall();
+    }
 
 }

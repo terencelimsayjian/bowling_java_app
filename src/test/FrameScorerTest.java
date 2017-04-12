@@ -8,7 +8,15 @@ class FrameScorerTest {
         Frame frame = new Frame();
         frame.roll(new Roll(6));
         frame.roll(new Roll(3));
-        assertEquals(FrameScorer.score(frame), 9);
+
+        Frame nextFrame = new Frame();
+        nextFrame.roll(new Roll(6));
+        nextFrame.roll(new Roll(3));
+
+        Frame followingFrame = new Frame();
+        followingFrame.roll(new Roll(6));
+        followingFrame.roll(new Roll(3));
+        assertEquals(FrameScorer.scoreFrame(frame, nextFrame, followingFrame), 9);
     }
 
     @Test
@@ -21,7 +29,11 @@ class FrameScorerTest {
         nextFrame.roll(new Roll(2));
         nextFrame.roll(new Roll(7));
 
-        assertEquals(FrameScorer.scoreClosedFrame(currentFrame, nextFrame), 12);
+        Frame followingFrame = new Frame();
+        followingFrame.roll(new Roll(2));
+        followingFrame.roll(new Roll(7));
+
+        assertEquals(FrameScorer.scoreFrame(currentFrame, nextFrame, followingFrame), 12);
     }
 
     @Test
@@ -33,7 +45,10 @@ class FrameScorerTest {
         Frame nextFrame = new Frame();
         nextFrame.roll(new Roll(10));
 
-        assertEquals(FrameScorer.scoreClosedFrame(currentFrame, nextFrame), 20);
+        Frame followingFrame = new Frame();
+        followingFrame.roll(new Roll(10));
+
+        assertEquals(FrameScorer.scoreFrame(currentFrame, nextFrame, followingFrame), 20);
     }
 
     @Test
@@ -45,7 +60,11 @@ class FrameScorerTest {
         nextFrame.roll(new Roll(6));
         nextFrame.roll(new Roll(4));
 
-        assertEquals(FrameScorer.scoreClosedFrame(currentFrame, nextFrame), 20);
+        Frame followingFrame = new Frame();
+        followingFrame.roll(new Roll(6));
+        followingFrame.roll(new Roll(4));
+
+        assertEquals(FrameScorer.scoreFrame(currentFrame, nextFrame, followingFrame), 20);
     }
 
     @Test
@@ -60,6 +79,93 @@ class FrameScorerTest {
         followingFrame.roll(new Roll(8));
         followingFrame.roll(new Roll(2));
 
-        assertEquals(FrameScorer.scoreTwoConsecutiveStrikes(currentFrame, nextFrame, followingFrame), 28);
+        assertEquals(FrameScorer.scoreFrame(currentFrame, nextFrame, followingFrame), 28);
     }
+
+    @Test
+    void testNinthFrameSpare() {
+        Frame currentFrame = new Frame();
+        currentFrame.roll(new Roll(9));
+        currentFrame.roll(new Roll(1));
+
+        LastFrame lastFrame = new LastFrame();
+        lastFrame.roll(new Roll(8));
+        lastFrame.roll(new Roll(1));
+
+        assertEquals(FrameScorer.scoreNinthFrame(currentFrame, lastFrame), 18);
+    }
+
+    @Test
+    void testNinthFrameStrike() {
+        Frame currentFrame = new Frame();
+        currentFrame.roll(new Roll(10));
+
+        LastFrame lastFrame = new LastFrame();
+        lastFrame.roll(new Roll(8));
+        lastFrame.roll(new Roll(1));
+
+        assertEquals(FrameScorer.scoreNinthFrame(currentFrame, lastFrame), 19);
+    }
+
+    @Test
+    void testNinthFrameStrikeWithThreeLastFrameStrikes() {
+        Frame currentFrame = new Frame();
+        currentFrame.roll(new Roll(10));
+
+        LastFrame lastFrame = new LastFrame();
+        lastFrame.roll(new Roll(10));
+        lastFrame.roll(new Roll(10));
+        lastFrame.roll(new Roll(10));
+
+        assertEquals(FrameScorer.scoreNinthFrame(currentFrame, lastFrame), 30);
+    }
+
+    @Test
+    void testScoreLastOpenFrame() {
+        LastFrame lastFrame = new LastFrame();
+        lastFrame.roll(new Roll(6));
+        lastFrame.roll(new Roll(2));
+
+        assertEquals(FrameScorer.scoreLastFrame(lastFrame), 8);
+    }
+
+    @Test
+    void testScoreLastOpenFrameDifferentValues() {
+        LastFrame lastFrame = new LastFrame();
+        lastFrame.roll(new Roll(5));
+        lastFrame.roll(new Roll(4));
+
+        assertEquals(FrameScorer.scoreLastFrame(lastFrame), 9);
+    }
+
+    @Test
+    void testScoreLastFrameSpareOpen() {
+        LastFrame lastFrame = new LastFrame();
+        lastFrame.roll(new Roll(5));
+        lastFrame.roll(new Roll(5));
+        lastFrame.roll(new Roll(6));
+
+        assertEquals(FrameScorer.scoreLastFrame(lastFrame), 16);
+    }
+
+    @Test
+    void testScoreLastFrameStrikeSpare() {
+        LastFrame lastFrame = new LastFrame();
+        lastFrame.roll(new Roll(10));
+        lastFrame.roll(new Roll(5));
+        lastFrame.roll(new Roll(5));
+
+        assertEquals(FrameScorer.scoreLastFrame(lastFrame), 20);
+    }
+
+    @Test
+    void testScoreLastFrameTripleStrike() {
+        LastFrame lastFrame = new LastFrame();
+        lastFrame.roll(new Roll(10));
+        lastFrame.roll(new Roll(10));
+        lastFrame.roll(new Roll(10));
+
+        assertEquals(FrameScorer.scoreLastFrame(lastFrame), 30);
+    }
+
 }

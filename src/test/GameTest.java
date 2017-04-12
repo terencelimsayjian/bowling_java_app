@@ -65,4 +65,49 @@ class GameTest {
         assertEquals(game.getTotalPinFall(), 110);
 
     }
+
+    @Test
+    void testGameScoreOpenFrames() {
+        for (int i = 0; i < 18; i++) {
+            game.roll(4);
+        }
+
+        game.roll(3);
+        game.roll(6);
+        assertEquals(game.score(), 81);
+    }
+
+    @Test
+    void testSpareFrames() {
+        for (int i = 0; i < 18; i++) {
+            game.roll(5);
+        }
+
+        game.roll(5);
+        game.roll(5);
+        game.roll(5);
+        assertEquals(game.score(), 150);
+    }
+
+    @Test
+    void testPerfectGame() {
+        for (int i = 0; i < 12; i++) {
+            game.roll(10);
+        }
+
+        assertEquals(game.score(), 300);
+    }
+
+    @Test
+    void testMixtureOfSparesAndStrikes() {
+        for (int i = 0; i < 5; i++) {
+            game.roll(10);
+            game.roll(8);
+            game.roll(2);
+        }
+
+        game.roll(10);
+        assertEquals(game.score(), 200);
+    }
+
 }
