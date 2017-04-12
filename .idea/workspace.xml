@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a099166-0b04-43ad-81eb-41dcff2db6b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/LastFrame.java" afterPath="$PROJECT_DIR$/src/main/LastFrame.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+            <state relative-caret-position="35">
+              <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -29,10 +28,12 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="100">
               <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
               <folding>
                 <element signature="method#Game#0;class#Game#0" expanded="false" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
                 <element signature="method#stopGameIfEndOfLastFrame#0;class#Game#0" expanded="false" />
                 <element signature="method#incrementCurrentFrameIfCurrentFrameComplete#0;class#Game#0" expanded="false" />
                 <element signature="method#score#0;class#Game#0" expanded="false" />
@@ -45,12 +46,12 @@
       <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="100">
               <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="16" />
               <folding>
                 <element signature="method#setFrameCompleteStatus#0;class#Frame#0" expanded="false" />
-                <element signature="e#1863#1864#0" expanded="true" />
-                <element signature="e#1938#1939#0" expanded="true" />
+                <element signature="e#1240#1241#0" expanded="true" />
+                <element signature="e#1297#1298#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,8 +60,8 @@
       <file leaf-file-name="LastFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/LastFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+            <state relative-caret-position="307">
+              <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
               <folding>
                 <element signature="method#setFrameCompleteStatus#0;class#LastFrame#0" expanded="false" />
                 <element signature="method#firstRollToString#0;class#LastFrame#0" expanded="false" />
@@ -80,18 +81,6 @@
               <folding>
                 <element signature="e#75#76#0" expanded="true" />
                 <element signature="e#113#114#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrameScorer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/FrameScorer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-              <folding>
-                <element signature="method#getFirstTwoRolls#0;class#FrameScorer#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -133,8 +122,8 @@
         <option value="$PROJECT_DIR$/src/main/Roll.java" />
         <option value="$PROJECT_DIR$/src/test/GameTest.java" />
         <option value="$PROJECT_DIR$/src/main/Frame.java" />
-        <option value="$PROJECT_DIR$/src/main/LastFrame.java" />
         <option value="$PROJECT_DIR$/src/main/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/LastFrame.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
       </list>
     </option>
@@ -627,7 +616,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31566265" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31566265" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -676,6 +665,8 @@
           <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
             <element signature="method#stopGameIfEndOfLastFrame#0;class#Game#0" expanded="false" />
             <element signature="method#incrementCurrentFrameIfCurrentFrameComplete#0;class#Game#0" expanded="false" />
             <element signature="method#score#0;class#Game#0" expanded="false" />
@@ -690,8 +681,8 @@
           <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="16" />
           <folding>
             <element signature="method#setFrameCompleteStatus#0;class#Frame#0" expanded="false" />
-            <element signature="e#1863#1864#0" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -737,6 +728,8 @@
           <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding>
             <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
             <element signature="method#stopGameIfEndOfLastFrame#0;class#Game#0" expanded="false" />
             <element signature="method#incrementCurrentFrameIfCurrentFrameComplete#0;class#Game#0" expanded="false" />
             <element signature="method#score#0;class#Game#0" expanded="false" />
@@ -767,8 +760,8 @@
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding>
             <element signature="method#setFrameCompleteStatus#0;class#Frame#0" expanded="false" />
-            <element signature="e#1863#1864#0" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,24 +919,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Frame.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="16" />
+        <state relative-caret-position="176">
+          <caret line="234" column="18" lean-forward="false" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
           <folding>
-            <element signature="method#setFrameCompleteStatus#0;class#Frame#0" expanded="false" />
-            <element signature="e#1863#1864#0" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="100">
           <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
             <element signature="method#stopGameIfEndOfLastFrame#0;class#Game#0" expanded="false" />
             <element signature="method#incrementCurrentFrameIfCurrentFrameComplete#0;class#Game#0" expanded="false" />
             <element signature="method#score#0;class#Game#0" expanded="false" />
@@ -952,10 +946,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="method#setFrameCompleteStatus#0;class#Frame#0" expanded="false" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/LastFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        <state relative-caret-position="307">
+          <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
           <folding>
             <element signature="method#setFrameCompleteStatus#0;class#LastFrame#0" expanded="false" />
             <element signature="method#firstRollToString#0;class#LastFrame#0" expanded="false" />
@@ -968,8 +974,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+        <state relative-caret-position="35">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding />
         </state>
       </provider>

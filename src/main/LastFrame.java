@@ -55,9 +55,14 @@ public class LastFrame extends Frame {
         String roll3String = EMPTY_ROLL;
 
         if (rolls.size() == 3) {
+            int firstRollPinFall = getRollPinFall(0);
+            int secondRollPinFall = getRollPinFall(1);
             int thirdRollPinFall = getRollPinFall(2);
             roll3String = getStringForOpenRolls(2);
-            if (thirdRollPinFall == 10) {
+
+            if (firstRollPinFall == 10 && secondRollPinFall + thirdRollPinFall == 10) {
+                roll3String = SPARE_STRING;
+            } else if (thirdRollPinFall == 10) {
                 roll3String = STRIKE_STRING;
             }
 
